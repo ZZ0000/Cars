@@ -20,35 +20,32 @@ public class Main {
         Car bmw = new Bmw(1989);
         Car tayota = new Tayota(2005);
 
+        //carGo(lada);
 
-       carGo(lada);
-
-      //  lada.go();
-      //  infoCar(lada);
-       // infoCar(bmw);
+        //infoCar(lada);
+        //infoCar(bmw);
         //infoCar(tayota);
 
     }
 
     private static void carGo(Car car) {
         boolean nonStop = true;
-        for (int i = 1; i <6 ; i++){
+        for (int i = 1; i < 6; i++) {
             nonStop = car.go();
-            if (!nonStop){
+            if (!nonStop) {
                 break;
             }
-
         }
-        if (nonStop){
+        if (nonStop) {
             System.out.println("Car win!");
-        };
+        }
     }
 
-    private static void infoCar(Car car){
-        System.out.println("Developer: "+car.getDeveloper());
-        System.out.println("Brand: "+car.getBrand());
-        System.out.println("Year: "+car.getYear());
-        System.out.println("Number car: "+car.getNumberCar());
+    private static void infoCar(Car car) {
+        System.out.println("Developer: " + car.getDeveloper());
+        System.out.println("Brand: " + car.getBrand());
+        System.out.println("Year: " + car.getYear());
+        System.out.println("Number car: " + car.getNumberCar());
     }
 
 }
